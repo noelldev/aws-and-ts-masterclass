@@ -15,3 +15,11 @@ cdk init --language=typescript
 cdk bootstrap //it will create a cf stack and resources in aws
 cdk deploy // it will deploy and create a CdkStarterStack in aws cf, it will create a cdk.out folder locally which includes the template
 //cdk synth - it will just create the cdk.out folder
+
+create bucket in cdk-starter-stack
+cdk synth
+cdk deploy //check the created bucket in aws console
+cdk list // list the cdkstack
+cdk diff // it will check local and those in aws
+cdk doctor // it will tell you if there is problem
+cdk destroy <cdkstackname>
