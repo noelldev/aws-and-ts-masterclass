@@ -23,3 +23,7 @@ cdk list // list the cdkstack
 cdk diff // it will check local and those in aws
 cdk doctor // it will tell you if there is problem
 cdk destroy <cdkstackname>
+
+add duration
+cdk deploy --parameters duration=11 //it will have an error if higher than set maxValue in duration, you can as well check in aws console
+cdk destroy CdkStarterStack // stack will be deleted by some resources like bucket will be retained
